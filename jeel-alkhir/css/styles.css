@@ -1,0 +1,311 @@
+
+/*
+green = #39A84E
+blue = #1EA2DE
+purple= #723192
+orange=#F3732A
+red=#CD2326
+gold=#D7B919
+brown=#AA7C58
+
+
+*/
+
+html{
+    margin: 0px;
+    padding:0px;
+    position: relative;  
+    min-height: 100%;
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+.web-container{
+    margin-bottom: 100px;
+}
+
+
+.logo{
+    margin-top:50px;    
+    height:100px ;
+    
+}
+.navbar{
+    height:80px;
+    z-index: 1;
+}
+
+
+.nav-item-style{
+
+font-size:medium;
+padding: 10px;
+padding-top:30px;
+}
+
+.green-color {
+color:#39A84E !important ;
+}
+
+.blue-color {
+color:#1EA2DE !important ; 
+}
+
+.red-color {
+color:#CD2326 !important ;
+}
+
+.purple-color {
+color:#723192 !important ;
+}
+      
+.orange-color{
+color:#F3732A !important;
+}
+
+.gold-color{
+color:#D7B919 !important;
+}
+
+.brown-color{
+color:#AA7C58 !important;
+}
+    
+
+
+.custom-toggler.navbar-toggler {
+    border-color:#39A84E ;
+    
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(79,177,70, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+@media screen and (max-width:768px){
+    .nav-item-style{
+     padding-top: 0px;
+    background-color:white;
+    
+        }
+        .logo{
+            margin-top:0px;    
+            height:70px ;
+        }
+    
+}
+
+@media screen and(max-width:600px){
+    .br-hide{
+        display: none;
+    }
+}
+
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+  
+  }
+
+.titles{
+    margin-top: 15px;
+    font-size: 50px;
+    color:#D7B919;
+    text-align: center;
+}
+
+.p-title{
+text-align: right;
+}
+
+.p-text{
+    text-align: right;
+    font-size:20px ;
+    color:black;
+}
+
+
+.true-sign:before{
+    content: '✓';
+}
+
+.sub-button{
+    background-color: white;
+    margin: 5px;
+    margin-right:50px;
+    border-radius: 5px;
+    border-style:none;
+    background-color: #EEEEEE;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.sub-button:hover {opacity: 3}
+.sub-button:hover{
+    color:#EA7066 ;
+}
+
+.sub-style{
+   border: 2px solid;
+   border-color:#F9D4D1 ;
+   border-radius: 5px;
+}
+
+.sec-title{
+font-size: 30px;
+color:#EA7066;
+margin-right: 50px;
+}
+
+.admin-bar{
+    color: pink;
+}
+
+.checkbox{
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.label-color{
+    border-style: dashed;
+    border-color: #3895D3;
+}
+.input-color{
+    border-style: dashed;
+    border-color: pink;
+}
+.border-green{
+    border-style: solid;
+    border-color: #39A84E;  
+}
+.border-blue{
+    border-style: solid;
+    border-color: #1EA2DE;  
+}
+.border-red{
+    border-style: solid;
+    border-color: #CD2326;  
+}
+.border-purple{
+    border-style: solid;
+    border-color: #723192;  
+}
+.border-orange{
+    border-style: solid;
+    border-color: #F3732A;    
+}
+
+.border-gold{
+    border-style: solid;
+    border-color: #D7B919;    
+}
+
+.row-equal-height{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: silver;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    border-style: groove;
+    border-color:gray;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+footer{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    background-color:gray;
+    left: 0px;
+}
+
+.icons-container{
+    margin-top: 10px;
+}
+
+
+.snapchat-icon{
+    color: #F8F503;
+   font-size: 25px;
+   padding: 5px;
+}
+
+.instagram-icon{
+    color: #D5455C;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.whatsapp-icon{
+    color:#41E15D;
+    font-size: 25px;
+    padding: 5px;
+}
+
+
+.copy-rights{
+    color: white;
+  
+}
+
+
+
